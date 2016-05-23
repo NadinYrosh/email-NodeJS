@@ -5,5 +5,5 @@ exports.Message = function(to, from, messageText){
 }
 
 exports.Message.prototype.read = function() {
-  return "Dear " + this.to + ", " + this.messageText + " Yours truly, " + this.from;
+  return "Dear " + this.to + ", " + this.messageText + " Yours truly, " + this.from + "<br>";
 }
