@@ -8,6 +8,11 @@ $(document).ready(function(){
     var messageField = $('#message').val();
 
     var newMessage = new Message(toField, fromField, messageField);
-    $('#message-displayed').append(newMessage.read());
+    $('#message-displayed').text(newMessage.read());
+    $('#reverse-message').text(newMessage.encode());
+
+    // var strArr = newMessage.read().split(' ');
+    // var reversed = strArr.reverse();
+    // $('#reverse-message').text(reversed.join(' '));
   });
 });
