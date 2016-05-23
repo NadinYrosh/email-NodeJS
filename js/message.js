@@ -1,9 +1,9 @@
-exports.Message = function(to, from, messegeText){
+exports.Message = function(to, from, messageText){
   this.to = to;
   this.from = from;
-  this.messegeText = messegeText;
+  this.messageText = messageText;
 }
 
-exports.Messege.prototype.read = function() {
-  return "Dear " + this.to + ", " + this.messegeText + " Yours truly, " + this.from;
+exports.Message.prototype.read = function() {
+  return "Dear " + this.to + ", " + this.messageText + " Yours truly, " + this.from;
 }
